@@ -69,7 +69,7 @@ def encode_url_to_filename(url):
     sanitized_url = validate_and_sanitize_url(str(url))
     if sanitized_url is None:
         raise ValueError("Provided URL is invalid and cannot be encoded.")
-    encoded_bytes = base64.urlsafe_b64decode(sanitized_url.encode('utf-8'))
+    encoded_bytes = base64.urlsafe_b64encode(sanitized_url.encode('utf-8'))
     encoded_str = encoded_bytes.decode('utf-8').rstrip('=')
     return encoded_str
 

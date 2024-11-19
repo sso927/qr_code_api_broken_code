@@ -11,9 +11,9 @@ class QRCodeRequest(BaseModel):
         json_schema_extra = {
             "example": {
                 "url": "https://example.com",
-                "fill_color": "black",
-                "back_color": "yellow",
-                "size": 20
+                "fill_color": "red",
+                "back_color": "white",
+                "size": 10
             }
         }
 
