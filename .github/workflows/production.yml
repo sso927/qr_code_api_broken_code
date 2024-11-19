@@ -62,4 +62,4 @@ jobs:
           platforms: linux/amd64,linux/arm64 
           cache-from: type=registry,ref=sso92327/devops_demo:cache  
           cache-to: type=inline,mode=max
-        
+          
